@@ -1,0 +1,6 @@
+struct Breakdown {
+	string timestamp;
+	string route;
+	string vehicle;
+	long stopNumber;
+};

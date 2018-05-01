@@ -1,0 +1,33 @@
+struct Breakdown {
+	string timestamp;
+	string route;
+	string vehicle;
+	long stopNumber;
+};
+
+struct Accident {
+	string timestamp;
+	string route;
+	string vehicle;
+	long stopNumber;
+};
+
+struct Position {
+	string timestamp;
+	string route;
+	string vehicle;
+	long stopNumber;
+	long numStops;
+	long timeBetweenStops;
+	string trafficConditions;
+	long fillInRatio;
+};
+
+struct Vehicle {
+   
+    string vId; @key
+    Breakdown breakdown;
+    Accident accident;
+    Position position;
+
+};
